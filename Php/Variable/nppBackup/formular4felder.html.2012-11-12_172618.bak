@@ -1,0 +1,11 @@
+<form action="formular4felder.php" method="post">
+Ihr Vorname:<br>
+<input type="Text" name="vorname"><br>
+Ihr Nachname:<br>
+<input type="Text" name="nachname"><br>
+Ihr Geburtsdatum:<br>
+<input type="" name="geburtsdatum"><br>
+Die Uhrzeit:<br>
+<input type="text" name="datum" value="<?=date("H:i")?>" />
+<input type="Submit" value="Absenden">
+</form>
