@@ -1,0 +1,8 @@
+<?php
+$vorname = $_POST["vorname"];
+$nachname = $_POST["nachname"];
+$geburtsdatum = $_POST["geburtsdatum"];
+$timestamp = time();
+$datum = date("d.m.Y - H:i", $timestamp);
+echo  $vorname .$nachname ."<br>" ."Geboren am: " .$geburtsdatum ."<br>" .$datum; 
+?>

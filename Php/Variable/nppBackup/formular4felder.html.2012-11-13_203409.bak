@@ -1,6 +1,4 @@
 <form action="formular4felder.php" method="post">
-Titel:<br>
-<input type="Text" name="titel"><br>
 Ihr Vorname:<br>
 <input type="Text" name="vorname"><br>
 Ihr Nachname:<br>

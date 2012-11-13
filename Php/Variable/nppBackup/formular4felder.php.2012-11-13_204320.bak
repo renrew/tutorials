@@ -1,0 +1,9 @@
+<?php
+$timestamp = time();
+$datum = date("d.m.Y - H:i", $timestamp);
+$vorname = $_POST["vorname"];
+$nachname = $_POST["nachname"];
+$titel = $_POST["titel"];
+$aktuell = $_POST["aktuell"];
+echo $titel ."<br>" .$vorname .$nachname ."<br>" ."br" ."Geboren am: " .$aktuell ."<br>" ."Eingegeben am:" ." ".$datum; 
+?>

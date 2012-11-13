@@ -1,11 +1,11 @@
 <form action="formular4felder.php" method="post">
-Titel:<br>
-<input type="Text" name="titel"><br>
 Ihr Vorname:<br>
 <input type="Text" name="vorname"><br>
 Ihr Nachname:<br>
 <input type="Text" name="nachname"><br>
 Ihr Geburtsdatum:<br>
-<input type="date("d.m.Y - H:i")" name="aktuell">
+<input type=$timestamp = time(); date("d.m.Y - H:i", $timestamp)("d.m.Y")" name="geburtsdatum">
+Ihr Nachname:<br>
+<input type="date" name="eingabezeit"><br>
 <input type="Submit" value="Absenden">
 </form>

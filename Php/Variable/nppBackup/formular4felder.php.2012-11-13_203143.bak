@@ -1,0 +1,6 @@
+<?php
+$vorname = $_POST["vorname"];
+$nachname = $_POST["nachname"];
+$aktuell = $_POST["aktuell"];
+echo  $vorname .$nachname ."<br>" ."Geboren am: " .$aktuell ."<br>" ."Eingegeben am:" ." ".$datum; 
+?>

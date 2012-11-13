@@ -1,11 +1,9 @@
 <form action="formular4felder.php" method="post">
-Titel:<br>
-<input type="Text" name="titel"><br>
 Ihr Vorname:<br>
 <input type="Text" name="vorname"><br>
 Ihr Nachname:<br>
 <input type="Text" name="nachname"><br>
 Ihr Geburtsdatum:<br>
-<input type="date("d.m.Y - H:i")" name="aktuell">
+<input type="date("d.m.Y")" name="geburtsdatum"><br>
 <input type="Submit" value="Absenden">
 </form>
