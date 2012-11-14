@@ -1,0 +1,8 @@
+<?php
+$zahl = $_POST['zahl'];
+$a = 0;
+if($zahl > 25)
+   {
+   echo "Zahl nicht im geforderten Bereich";
+   }
+   ?>

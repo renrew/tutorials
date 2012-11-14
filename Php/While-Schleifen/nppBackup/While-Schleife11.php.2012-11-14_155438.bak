@@ -1,0 +1,10 @@
+<?php
+$zahl = $_POST['zahl'];
+
+$a = 0;
+while($a < $zahl)
+   {
+   $a++;
+   echo $a.", ";
+   }
+?>

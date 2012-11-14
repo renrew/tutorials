@@ -1,0 +1,3 @@
+<?php
+$datei = fopen("Probe1.txt", "w+");
+?>

@@ -1,0 +1,5 @@
+<?php
+$zahl = $_POST['zahl'];
+
+$a = 0;
+?>

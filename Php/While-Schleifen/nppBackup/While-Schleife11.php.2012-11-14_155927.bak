@@ -1,0 +1,25 @@
+<?php
+$zahl = $_POST['zahl'];
+
+$a = 0;
+while($a < $zahl)
+   {
+   $a++;
+   echo $a.", ";
+   }
+   $zahl = $_POST["zahl"];
+
+//Eine kleine Überprüfung,
+//damit keine zu großen Zahlen eingegeben werden
+if($zahl > 25)
+   {
+   $zahl = 25;
+   }
+
+$a = 0;
+while($a < $zahl)
+   {
+   $a++;
+   echo $a.", ";
+   }
+?>

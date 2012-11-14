@@ -1,0 +1,17 @@
+<?php
+$zahl = $_POST['zahl'];
+$a = 0;
+if($zahl > 100 or $zahl < 1)//if überprüft, ob die eingegebene Zahl zwischen 1 und 100 ist
+   {
+   echo "Zahl nicht im geforderten Bereich";
+   }
+   else
+   {
+   while($a < $zahl)
+   {
+   $a++;
+   echo $a.", ";
+   }
+   }
+   ?>
+   
