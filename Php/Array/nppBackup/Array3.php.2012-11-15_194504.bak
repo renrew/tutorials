@@ -1,0 +1,25 @@
+<?php
+$datei = file("counter.txt");
+
+for($a = 0; $a < count($datei); $a++)
+   {
+   $zerlegen = explode("|", $datei[$a]);
+
+   echo "Von <b>$zerlegen[0]</b><br>
+   $zerlegen[1]<br><br>";
+   }
+
+echo "<br><br>Und jetzt die while-Schleife";
+
+$datei = file("counter.txt");
+
+$a = 0;
+while($a < count($datei))
+   {
+   $zerlegen = explode("|", $datei[$a]);
+
+   echo "Von <b>$zerlegen[0]</b><br>
+   $zerlegen[1]<br><br>";
+   $a++;
+   }
+?>

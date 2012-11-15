@@ -1,0 +1,12 @@
+<form action="get2.php" method="get">
+Vorname
+<br><input type="text" name="vor" size=40 maxlength=40>
+<br>Nachname
+<br><input type="text" name="nach" size=40 maxlength=40>
+<br>ID
+<br><input type="text" name="id" size=40 maxlength=40>
+<br>Nachricht
+<br><textarea name="msg" rows=7 cols=30></textarea>
+<br><input type="reset" value=" Zurücksetzen ">
+<input type="submit" value="Daten senden ">
+</form>

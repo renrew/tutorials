@@ -1,0 +1,13 @@
+<?php
+$vorname = $_Get["vor"];
+$knachname = $_Get["nach"];
+$id = $_Get["id"];
+if($vor=="" OR $nach =="" OR $id =="")
+   {
+   echo "Bitte füllen Sie alle Felder aus";
+   }
+else
+   {
+   echo "Ihr Eintrag wurde gespeichert";
+   }
+?>

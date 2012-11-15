@@ -1,0 +1,14 @@
+<?php
+$vor = $_Get["vor"];
+$nach = $_Get["nach"];
+$id = $_Get["id"];
+$msg = $_Get["imsg"];
+if($vor =="" OR $nach =="" OR $id =="")
+   {
+   echo "Bitte füllen Sie alle Felder aus";
+   }
+else
+   {
+   echo "Ihr Eintrag wurde gespeichert";
+   }
+?>

@@ -1,0 +1,5 @@
+<form action="seite2.php" method="get">
+Ihr Vorname:<br>
+<input type="Text" name="vorname">
+<input type="Submit" value="Absenden">
+</form>
