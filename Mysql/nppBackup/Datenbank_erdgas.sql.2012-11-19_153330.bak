@@ -1,0 +1,25 @@
+#Datenhaltung
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle erdgas wenn sie existiert
+CREATE TABLE IF NOT EXISTS erdgas (#Erstelle die Tabelle, wenn sie nicht existiert
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	datum DATE(10),
+	verbrauch_euro decimal(15,4) ,
+	verbrauch_kubikmeter decimal(15,2), 
+	verbrauch_kilowattstunde decimal(15,4),
+	PRIMARY KEY (id)
+);
+
+#Datenmanipulation
+INSERT INTO erdgas (datum) VALUES
+("11.01.2009"),
+("12.01.2009");
+
+INSERT INTO erdgas (verbrauch_euro) VALUES
+("6,10),
+("9,37);
+
+UPDATE example SET data = "test" WHERE data LIKE "Hallo";
+
+#DELETE from example where id = 2;
+
+SELECT * FROM example WHERE id = 1;

@@ -1,0 +1,18 @@
+#Datenhaltung
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle erdgas wenn sie existiert
+CREATE TABLE IF NOT EXISTS erdgas (#Erstelle die Tabelle, wenn sie nicht existiert
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	data VARCHAR(100),
+	verbrauch_euro decimal(15,4) DEFAULT 0.1,
+	PRIMARY KEY (id)
+);
+
+#Datenmanipulation
+INSERT INTO example (data) VALUES
+("Hallo"),
+("Welt");
+
+INSERT INTO example (data, verbrauch_euro) VALUES
+("Hallo", 15.1),
+("Welt", 88.2);
+

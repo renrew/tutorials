@@ -1,0 +1,8 @@
+CREATE TABLE example (
+	id INT,
+	data VARCHAR(100)
+);
+
+INSERT INTO example (id, data) VALUES
+(1, "Hallo"),
+(2, "Welt");

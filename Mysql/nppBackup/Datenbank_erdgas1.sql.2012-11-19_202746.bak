@@ -1,0 +1,13 @@
+#Datenhaltung
+CREATE TABLE erdgas(
+id INT(11) NOT NULL AUTO_INCREMENT,
+datum DATE NOT NULL,
+zaehlerstand VARCHAR(240) NOT NULL,
+verbrauch_kubikmeter DECIMAL(15,3),
+verbrauch_kwh DECIMAL(15,3),
+verbrauch_euro DECIMAL(15,3),
+temperatur_min DECIMAL(15,1),
+temperatur_max DECIMAL(15,1),
+wetter VARCHAR (30)
+PRIMARY KEY (id), 
+)

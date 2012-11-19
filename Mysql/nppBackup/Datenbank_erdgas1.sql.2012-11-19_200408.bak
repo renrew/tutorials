@@ -1,0 +1,14 @@
+#Datenhaltung
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle erdgas wenn sie existiert
+CREATE TABLE erdgas(
+id INT(11) NOT NULL AUTO_INCREMENT,
+datum DATE NOT NULL,
+zaehlerstand VARCHAR(240) NOT NULL,
+verbrauch_kubikmeter decimal(15,3),
+verbrauch_kwh decimal(15,3),
+verbrauch_euro decimal(15,3),
+temperatur_min decimal(15,1),
+temperatur_max decimal(15,1),
+wetter VARCHAR (30)
+PRIMARY KEY (id),
+) 

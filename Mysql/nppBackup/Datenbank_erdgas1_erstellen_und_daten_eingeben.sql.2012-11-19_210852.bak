@@ -1,0 +1,19 @@
+#Datenhaltung_Tabelle anlegen
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle example wenn sie existiert
+CREATE TABLE IF NOT EXISTS erdgas(
+id  INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+datum  DATE NOT NULL,
+zaehlerstand  VARCHAR(15) NOT NULL,
+verbrauch_kubikmeter  DECIMAL(15,3),
+verbrauch_kwh  DECIMAL(15,3),
+verbrauch_euro  DECIMAL(15,3),
+temperatur_min  DECIMAL(15,1),
+temperatur_max  DECIMAL(15,1),
+wetter  VARCHAR (30)
+);
+
+#Datenmanipulation
+INSERT INTO erdgas (datum, zaehlerstand) VALUES
+("11.01.2009", "40714,212");
+INSERT INTO erdgas (datum, zaehlerstand) VALUES
+("12.01.2009", "40732,179");

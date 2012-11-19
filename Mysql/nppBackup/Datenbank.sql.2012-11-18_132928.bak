@@ -1,0 +1,21 @@
+#
+CREATE TABLE IF NOT EXISTS example (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	data VARCHAR(100),
+	verbrauch_euro decimal(15,4)
+);
+
+#Daten
+INSERT INTO example (id, data) VALUES
+(1, "Hallo"),
+(2, "Welt");
+
+INSERT INTO example (id, data, verbrauch_euro) VALUES
+(1, "Hallo", 15.1),
+(2, "Welt", 88.2);
+
+UPDATE example SET data = "test" WHERE data LIKE "Hallo";
+
+#DELETE from example where id = 2;
+
+SELECT * FROM example WHERE id = 1;

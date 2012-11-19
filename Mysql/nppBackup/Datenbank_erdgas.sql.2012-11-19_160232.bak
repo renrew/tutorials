@@ -1,0 +1,32 @@
+#Datenhaltung
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle erdgas wenn sie existiert
+CREATE TABLE IF NOT EXISTS erdgas (#Erstelle die Tabelle, wenn sie nicht existiert
+	id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	datum DATE,
+	zaehlerstand DECIMAL,
+	verbrauch_euro DECIMAL,
+	verbrauch_kubikmeter DECIMAL, 
+	verbrauch_kilowattstunde DECIMAL,
+	temperatur_tief DECIMAL,
+	temperatur_hoch DECIMAL,
+	wetter VARCHAR(20) DEFAULT sonnig,
+	
+);
+
+#Datenmanipulation
+INSERT INTO erdgas (datum) VALUES
+("11.01.2009"),
+("12.01.2009");
+
+INSERT INTO erdgas (verbrauch_euro) VALUES
+("6,10),
+("9,37);
+INSERT INTO erdgas (verbrauch_kubikmeter) VALUES
+("11,688),
+("17,967);
+
+UPDATE erdgas SET verbrauch_euro = "test" WHERE verbrauch_euro LIKE >0;
+
+#DELETE from erdgas where id = 2;
+
+SELECT * FROM erdgas WHERE id = 1;

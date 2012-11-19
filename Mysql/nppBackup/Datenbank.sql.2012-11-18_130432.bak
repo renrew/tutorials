@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS example (
+	id INT,
+	data VARCHAR(100)
+);
+
+INSERT INTO example (id, data) VALUES
+(1, "Hallo"),
+(2, "Welt");
+
+UPDATE example SET data = "test" WHERE data LIKE "Hallo";
+
+DELETE from example
+where id = 2
