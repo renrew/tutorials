@@ -1,0 +1,8 @@
+<?php
+$abfrage = "SELECT * FROM links WHERE id = '1'";
+$ergebnis = mysql_query($abfrage);
+$row = mysql_fetch_object($ergebnis);
+
+echo "$row->url";
+
+?>

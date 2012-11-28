@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Formularinhalt in eine Datenbank schreiben</title>
+</head>
+
+<body>
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="formular" id="formular">
+Vorname: <input type="text" name="vorname" id="vorname" /><br />
+Geschlecht: <input type="radio" name="geschlecht" id="geschlecht_1" value="männlich" checked="checked" />Männchen <input type="radio" name="geschlecht" id="geschlecht_2" value="weiblich" />Weibchen<br />
+Alter: <select name="alter" id="alter"><?php for ($i=1; $i<121; $i++) { echo "<option>{$i}</option>"; } ?></select><br />
+Führerschein: <input type="checkbox" name="fuehrerschein" id="fuehrerschein" /><br />
+<input type="submit" name="eintragen" id="eintragen" value="Abschicken" />
+</body>
+</html>

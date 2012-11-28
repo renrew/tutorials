@@ -1,0 +1,8 @@
+<?php
+$abfrage = "SELECT url FROM links";
+$ergebnis = mysql_query($abfrage);
+while($row = mysql_fetch_object($ergebnis))
+   {
+   echo "$row->url <br>";
+   }
+?>

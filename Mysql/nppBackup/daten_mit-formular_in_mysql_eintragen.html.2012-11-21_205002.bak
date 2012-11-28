@@ -1,0 +1,20 @@
+<form action="daten_mit_formular_in_mysql_eintragen.php" method="post">
+Datum:<br>
+<input type="Text" name="datum"><br>
+Zählerstand:<br>
+<input type="Text" name="zaehlerstand"><br><br>
+Verbrauch in m³:<br>
+<input type="Text" name="verbrauch_kubikmeter"><br>
+Verbrauch in kwh:<br>
+<input type="Text" name="verbrauch_kwh"><br>
+Verbrauch in €::<br>
+<input type="Text" name="verbrauch_euro"><br><br>
+Temperatur-min:<br>
+<input type="Text" name="tempmin"><br>
+Temperatur-max:<br>
+<input type="Text" name="tempmax"><br>
+Wetter:<br>
+<input type="Text" name="wetter"><br><br>
+
+<input type="Submit" value="Absenden">
+</form>

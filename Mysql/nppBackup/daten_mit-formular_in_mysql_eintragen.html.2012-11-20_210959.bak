@@ -1,0 +1,8 @@
+<body>
+
+<form name="form1" method="post" action="add2db.php" style="padding:0px;margin:0px;">
+       <p>Name:</p>  <input name="xname" type="text" id="xname" size="50" maxlength="255" >
+       <p>Mail:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+       <input type="submit" name="Submit" value="Weiter"></td>
+</form>
+</body>

@@ -1,0 +1,39 @@
+<?php  
+error_reporting(E_ALL); ini_set('display_errors', true); 
+$dbserver = 'localhost'; 
+$dbuser = 'USERNAME'; 
+$dbpass = 'PASSWORT'; 
+$dbname = 'DATENBANK'; 
+
+$db = mysql_connect($dbserver, $dbuser, $dbpass) or die(mysql_error()); 
+mysql_select_db($dbname, $db) or die(mysql_error()); 
+
+
+$username = mysql_real_escape_string($_REQUEST['username'], $db);  
+$passwort = mysql_real_escape_string($_REQUEST['passwort'], $db);  
+$email = mysql_real_escape_string($_REQUEST['email'], $db);  
+$homepage = mysql_real_escape_string($_REQUEST['homepage'], $db);  
+$webcam = mysql_real_escape_string($_REQUEST['webcam'], $db);  
+$messenger = mysql_real_escape_string($_REQUEST['messenger'], $db);   
+$region = mysql_real_escape_string($_REQUEST['region'], $db);  
+$wohnort = mysql_real_escape_string($_REQUEST['wohnort'], $db);  
+$age = mysql_real_escape_string($_REQUEST['age'], $db);  
+$groesse = mysql_real_escape_string($_REQUEST['groesse'], $db);  
+$gewicht = mysql_real_escape_string($_REQUEST['gewicht'], $db);  
+$koerper = mysql_real_escape_string($_REQUEST['koerper'], $db);  
+$Suche = mysql_real_escape_string($_REQUEST['Suche'], $db);  
+$statement = mysql_real_escape_string($_REQUEST['statement'], $db);  
+$regdate = mysql_real_escape_string($_REQUEST['regdate'], $db);  
+
+
+$befehl = " 
+    INSERT INTO 
+        `w4g_profiles` 
+        (`id`, `username`, `password`, `email`, `homepage`, ´webcam`, `messenger`, `region`, `wohnort`, `age`, `groesse`, `gewicht`, `koerper`, `Suche`, `statement`, `regdate`, `profilhits`, `pic1`, `pic2`) 
+    VALUES 
+    ('0', '$username','$password', '$email', '$homepage', '$webcam', '$messenger', '$region', '$wohnort', '$age', '$groesse', '$gewicht', '$koerper', '$Suche', '$statement', '$regdate', '0', '', '') 
+    ";  
+
+
+mysql_query($befehl, $db) or die(mysql_error());  
+?>

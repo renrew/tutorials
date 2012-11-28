@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS preise (#Erstelle die Tabelle, wenn sie nicht existiert
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	data VARCHAR(100),
+	erdgas_euro VARCHAR(100),
+	erdgas_grund_euro VARCHAR(100),
+	lieferant VARCHAR(100),
+	strom_euro VARCHAR(100),
+	strom_grund_euro VARCHAR(100),
+	lieferant VARCHAR(100),
+	wasser_euro VARCHAR(100),
+	abwasser_euro VARCHAR(100),
+	lieferant VARCHAR(100),
+	PRIMARY KEY (id)
+);

@@ -1,0 +1,13 @@
+<body>
+
+<form name="form1" method="post" action="add2db.php" style="padding:0px;margin:0px;">
+       <p>Datum:</p>  <input name="xname" type="text" id="xdatum" size="50" maxlength="255" >
+       <p>Zählerstand:</p>  <input name="xzählerstand" type="text" id="xmail" size="50" maxlength="255" >
+	   <p>Verbrauch in m³:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+	   <p>Zählerstand:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+	   <p>Zählerstand:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+	   <p>Zählerstand:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+	   <p>Zählerstand:</p>  <input name="xmail" type="text" id="xmail" size="50" maxlength="255" >
+       <input type="submit" name="Submit" value="Weiter"></td>
+</form>
+</body>

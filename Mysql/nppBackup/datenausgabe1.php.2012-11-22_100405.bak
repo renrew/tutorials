@@ -1,0 +1,7 @@
+<?php
+$abfrage = "SELECT Spaltenname FROM Tabellenname";
+$ergebnis = mysql_query($abfrage);
+while($row = mysql_fetch_object($ergebnis))
+   {
+   echo "$row->Spaltenname";
+   }

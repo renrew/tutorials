@@ -1,0 +1,35 @@
+#Datenhaltung_Tabelle anlegen
+DROP TABLE IF EXISTS erdgas;#Lösche die Tabelle example wenn sie existiert
+CREATE TABLE IF NOT EXISTS erdgas(
+id  INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+datum  DATE NOT NULL,
+zaehlerstand  VARCHAR(15) NOT NULL,
+verbrauch_kubikmeter  DECIMAL(15,3),
+verbrauch_kwh  DECIMAL(15,3),
+verbrauch_euro  DECIMAL(15,3),
+temperatur_min  DECIMAL(15,1),
+temperatur_max  DECIMAL(15,1),
+wetter  VARCHAR (30)
+);
+
+#Datenmanipulation
+INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+VALUES ("11.01.2009", "40714,212", 11.688, verbrauch_kubikmeter*0.9636*11.108, 6.10);
+INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+VALUES ("12.01.2009", "40732,179", 17.967, verbrauch_kubikmeter*0.9636*11.108, 9.37);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("13.01.2009", "40749,437", 17,258, verbrauch_kubikmeter*0.9636*11.108, 9.00);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("14.01.2009", "40765,099", 15,662, verbrauch_kubikmeter*0.9636*11.108, 8.17);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("15.01.2009", "40775,380", 10.281, verbrauch_kubikmeter*0.9636*11.108, 5.36);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("16.01.2009", "40786,338", 10.958, verbrauch_kubikmeter*0.9636*11.108, 5.72);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("17.01.2009", "40797,883", 11.545, verbrauch_kubikmeter*0.9636*11.108, 6.02);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("18.01.2009", "40810,757", 12.874, verbrauch_kubikmeter*0.9636*11.108, 6.72);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("19.01.2009", "40819,714", 8.957, verbrauch_kubikmeter*0.9636*11.108, 4.67);
+#INSERT INTO erdgas (datum, zaehlerstand, verbrauch_kubikmeter, verbrauch_kwh, verbrauch_euro) 
+#VALUES ("20.01.2009", "40830,769", 11.055, verbrauch_kubikmeter*0.9636*11.108, 5.77);

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Formular-Elemente</title>
+</head>
+<body>
+<hr />
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="formular" id="formular">
+Textfeld: <input type="text" name="textfeld" id="textfeld" value="Das ist ein Textfeld" /><br />
+Textarea: <textarea name="textarea" id="textarea" cols="30" rows="2">Das ist ein Textbereich</textarea><br />
+Checkbox: <input type="checkbox" name="checkbox" id="checkbox" value="Das ist eine Checkbox" /><br />
+Radiobutton: <input type="radio" name="radio" id="radiobutton" value="Das ist ein Radiobutton" /><br />
+Radiobutton-Gruppe: <input type="radio" name="radiobuttongruppe" id="radiobuttongruppe_1" value="ja" /> Ja <input type="radio" name="radiobuttongruppe" id="radiobuttongruppe_2" value="nein" />Nein<br />
+Selectbox: <select name="selectbox" id="selectbox"><option>Das ist der Wert einer Selectbox</option><option>Das ist der zweite Wert einer Selectbox, oder nicht?</option></select><br />
+SubmitButton: <input type="submit" name="submitbutton" id="submitbutton" value="Senden" />
+</form>
+</body>
+</html>

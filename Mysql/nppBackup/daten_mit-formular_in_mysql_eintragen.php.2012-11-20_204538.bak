@@ -1,0 +1,19 @@
+<?php
+error_reporting(E_ALL);
+
+// connect to database
+  mysql_connect("localhost","test","test");
+//define variables 
+  $xname = $_POST["xname"];
+  $xmail = $_POST["xmail"];
+
+//insert values
+mysql_query("INSERT INTO testtab (test_name, test_mail)
+  VALUES ('$xname', '$xmail')");
+
+
+// echo values
+echo "$xname";
+echo "$xmail";
+
+?>

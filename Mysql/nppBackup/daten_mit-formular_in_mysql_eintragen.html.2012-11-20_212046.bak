@@ -1,0 +1,14 @@
+<form action="eingaben-testen.php" method="post">
+E-Mail:<br>
+
+<input type="Date" name="datum"><br><br>
+<input type="Text" name="zählerstand"><br><br>
+<input type="Text" name="verbrauch in m³"><br><br>
+<input type="Text" name="verbrauch in kwh"><br><br>
+<input type="Text" name="temp-min"><br><br>
+<input type="Text" name="temp-max"><br><br>
+<input type="Text" name="wetter"><br><br>
+
+
+<input type="Submit" value="Absenden">
+</form>

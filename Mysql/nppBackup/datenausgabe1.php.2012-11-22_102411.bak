@@ -1,0 +1,12 @@
+<?php
+$verbindung = mysql_connect("localhost",
+"root","12345");
+
+$abfrage = "SELECT * FROM erdgas";
+$ergebnis = mysql_query($abfrage);
+while($row = mysql_fetch_object($ergebnis))
+   {
+   echo "$row->datum, $row->zaehlerstand, $row->verbrauch_kubikmeter, $row->verbrauch_kwh, $row->verbrauch_euro, $row->temperatur_min, $row->temperatur_max, $row->wetter <br>";
+
+   }
+?>

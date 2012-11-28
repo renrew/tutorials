@@ -1,0 +1,29 @@
+<?php
+$db_host = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "terminkalender";
+
+//if (isset( $_POST['eintragen'] ))
+//{
+
+    
+    //Inhalte aus POST holen
+    $datum = $_POST['datum'];
+    $titel = $_POST['titel'];
+    $beschreibung = $_POST['beschreibung'];
+    
+
+    // Verbindung oeffnen und Datenbank ausweahlen
+     $conID= mysql_connect("localhost","root","");
+        mysql_select_db( $db_name, $conID );
+
+    
+    // Anfrage, die an die Datenbank geschickt werden soll
+    $sql = "INSERT INTO termine (datum, titel, beschreibung)
+            VALUES('$datum', '$titel', '$beschreibung');";
+                
+    // Schickt die Anfrage an die DB und schreibt die Daten in die Tabelle
+    mysql_query( $sql );
+    echo $datum;
+	?>

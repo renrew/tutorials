@@ -1,0 +1,22 @@
+<?php
+//error_reporting(E_ALL);
+
+// connect to database
+mysql_connect("localhost","root","12345") or die ("Keine Verbindung");
+mysql_select_db("erdgas") or die ("Die Datenbank ist nicht da");
+//define variables 
+  $datum = $_POST["datum"];
+  $zaehlerstand = $_POST["zaehlerstand"];
+  
+mysql_select_db (erdgas)
+
+//insert values
+mysql_query("INSERT INTO erdgas (datum, zaehlerstand)
+  VALUES ('$datum', '$zaehlerstand')");
+
+
+// echo values
+echo "$datum";
+echo "$zaehlerstand";
+
+?>//Was fehlt ist die Datenbankwahl mit mysql_select_db. Du solltest auch eine Fehlerbehandlung einbauen, die bspw. die Verbindung prüft.

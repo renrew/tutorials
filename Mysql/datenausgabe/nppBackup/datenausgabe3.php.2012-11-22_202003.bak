@@ -1,0 +1,8 @@
+<?php
+$abfrage = "SELECT zaehlerstand FROM erdgas WHERE id = '1' And id = '5'";
+$ergebnis = mysql_query($abfrage);
+$row = mysql_fetch_object($ergebnis);
+
+echo "$row->zaehlerstand";
+
+?>

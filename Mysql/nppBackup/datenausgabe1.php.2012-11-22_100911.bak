@@ -1,0 +1,8 @@
+<?php
+$abfrage = "SELECT datum FROM erdgas";
+$ergebnis = mysql_query($abfrage);
+while($row = mysql_fetch_object($ergebnis))
+   {
+   echo "$row->datum <br>";
+   }
+?>

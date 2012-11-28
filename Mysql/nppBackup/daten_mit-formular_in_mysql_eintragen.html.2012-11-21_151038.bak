@@ -1,0 +1,20 @@
+<form action="eingaben-testen.php" method="post">
+Datum:<br>
+<input type="Date" name="datum"><br>
+Zählerstand:<br>
+<input type="Text" name="zählerstand"><br><br>
+Verbrauch in m³:<br>
+<input type="Text" name="verbrauch in m³"><br>
+Verbrauch in kwh:<br>
+<input type="Text" name="verbrauch in kwh"><br>
+Verbrauch in €::<br>
+<input type="Text" name="temp-min"><br><br>
+Temperatur-min:<br>
+<input type="Text" name="temp-max"><br>
+Temperatur-max:<br>
+<input type="Text" name="wetter"><br>
+Wetter:<br>
+<input type="Text" name="wetter"><br><br>
+
+<input type="Submit" value="Absenden">
+</form>
