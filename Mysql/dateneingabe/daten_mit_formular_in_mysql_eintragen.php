@@ -1,7 +1,7 @@
 <?php
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = "12345";
+$db_pass = "";
 $db_name = "energietraeger";
 
 //if (isset( $_POST['eintragen'] ))

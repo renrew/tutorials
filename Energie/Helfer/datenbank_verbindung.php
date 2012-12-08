@@ -1,5 +1,6 @@
 <?php
 $verbindung = mysql_connect("localhost",
-"root","12345");
+"root","");
 mysql_select_db("energietraeger");
+
 ?>
