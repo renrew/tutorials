@@ -1,8 +1,43 @@
 <?php
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = "12345";
+$db_pass = "";
 $db_name = "energietraeger";
+// Verbindung oeffnen und Datenbank ausweahlen
+     $conID= mysql_connect("localhost","root","");
+        mysql_select_db( $db_name );
+$sql = "
+	SELECT 
+		zaehlerstand,
+		datum
+	FROM 
+		erdgas
+	ORDER BY 
+		zaehlerstand DESC
+	LIMIT 1;
+";
+
+// holt ergebnis aus datenbank und speichert dieses in $result
+$result = mysql_query( $sql );
+
+
+$zmax = 0;
+//var_dump($zmax);
+//echo "<br>";
+
+while($row = mysql_fetch_assoc($result))
+{
+	
+	//echo $row["zaehlerstand"];
+	$zmax = $row["zaehlerstand"];
+	}
+	
+
+//var_dump($zmax);
+//echo "<br>";
+
+$zmax = floatval($zmax);
+//var_dump($zmax);		
 
 //if (isset( $_POST['eintragen'] ))
 //{
@@ -11,12 +46,10 @@ $db_name = "energietraeger";
     //Inhalte aus POST holen
     $datum = $_POST['datum'];
     $zaehlerstand = $_POST['zaehlerstand'];
-    $verbrauch_kubikmeter = $_POST['verbrauch_kubikmeter'];
+    $verbrauch_kubikmeter = $_POST['Zehlerstand'-$zmax];
     $verbrauch_kwh = $verbrauch_kubikmeter*0.9636*11.108;
 	$verbrauch_euro = $_POST['verbrauch_euro'];
-    // Verbindung oeffnen und Datenbank ausweahlen
-     $conID= mysql_connect("localhost","root","12345");
-        mysql_select_db( $db_name, $conID );
+    
 
     
     // Anfrage, die an die Datenbank geschickt werden soll

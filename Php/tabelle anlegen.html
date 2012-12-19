@@ -1,0 +1,110 @@
+
+<?php
+
+$mysqlhost="localhost"; // MySQL-Host angeben
+
+$mysqluser="root"; // MySQL-User angeben
+
+$mysqlpwd=""; // Passwort angeben
+
+$mysqldb="db_energietraeger"; // Gewuenschte Datenbank angeben
+
+ 
+
+$connection=mysql_connect($mysqlhost, $mysqluser, $mysqlpwd) or die
+
+("Verbindungsversuch fehlgeschlagen");
+
+ 
+
+mysql_select_db($mysqldb, $connection) or die("Konnte die Datenbank nicht
+
+waehlen.");
+
+ 
+
+$sql = "SELECT id, anrede, vorname, nachname, strasse, plz, wohnort, fon, fax,
+
+email FROM adressen";
+
+ 
+
+$adressen_query = mysql_query($sql) or die("Anfrage nicht erfolgreich");
+
+ 
+
+$anzahl = mysql_num_rows($adressen_query);
+
+echo "Anzahl der Datensätze: $anzahl";
+
+?>
+
+ 
+
+<table cellpadding="1" cellspacing="3" border="1">
+
+<tr>
+
+<td>ID</td>
+
+<td>Anrede</td>
+
+<td>Vorname</td>
+
+<td>Nachname</td>
+
+<td>Strasse</td>
+
+<td>PLZ</td>
+
+<td>Wohnort</td>
+
+<td>Telefon</td>
+
+<td>Fax</td>
+
+<td>Email</td>
+
+</tr>
+
+ 
+
+<?php
+
+while ($adr = mysql_fetch_array($adressen_query)){
+
+?>
+
+<tr>
+
+<td><?=$adr['id']?></td>
+
+<td><?=$adr['anrede']?></td>
+
+<td><?=$adr['vorname']?></td>
+
+<td><?=$adr['nachname']?></td>
+
+<td><?=$adr['strasse']?></td>
+
+<td><?=$adr['plz']?></td>
+
+<td><?=$adr['wohnort']?></td>
+
+<td><?=$adr['fon']?></td>
+
+<td><?=$adr['fax']?></td>
+
+<td><?=$adr['email']?></td>
+
+</tr>
+
+<?php
+
+}
+
+?>
+
+ 
+
+</table>
