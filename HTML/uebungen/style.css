@@ -1,0 +1,39 @@
+<!--
+#kopfbereich {
+  background:url(bilder/saeulen1.jpg) no-repeat left top;
+  height:150px;
+  color:white;
+  text-align:right;
+  font-size:1.5em;
+  padding:0.4em 0.4em 0 0;
+}
+#steuerung {
+  background-color:#ceb98e;
+}
+#schatten {
+  background:url(bilder/schatten.png) repeat-x;
+  height:32px;
+}
+#inhalt {
+  /*background-color: orange;*/
+  height:550px;
+  padding-left:2em;
+}
+#unten {
+  height:350px;
+  padding-left:2em;
+}
+html, body {
+  font: 100% /*Arial, Helvetica*/lucida, handwriting, sans-serif;
+}
+* {
+  margin:0;
+  padding:0;
+}
+#inhalt h1, h2, h3, p, ul {
+  padding-bottom:.7em;
+}
+#inhalt ul {
+  padding-left:2em;
+}
+-->
