@@ -1,0 +1,77 @@
+
+h1   {
+  background-color:#FFFFCC;
+  font-family:lucida handwriting; /* Schriftart */
+  color:#black;   /* Farbe  */
+  font-size:20pt;  /* Größe    */
+  font-weight:bold; /* Schriftstärke  */
+  font-style:oblique; /* Schriftstil  */
+  text-align:center; /*Textausrichtung */
+  
+  	
+    }
+
+
+	a:link	 {  
+	font-family:Stencil STD;
+	font-size:18pt;
+	font-weight:bolder;
+	letter-spacing:0.2em;
+	  	}
+		 
+	a:link   {
+	border-color:#black;
+	border-width:3px;
+	border-style: groove;
+	background: #FFFFCC;
+
+	    }
+hr /* Horizontale Linie formatieren */
+	     {
+		color: black; 
+		background: red; 
+		height: 2px;
+		}
+
+#anleitungen 
+	  {  
+		text-align:center;
+		padding-left: 10px; 
+		padding-right: 10px;
+		width:285px;
+		bottom:4em; 
+		border:5px solid yellow;
+		background: red;
+		
+}
+
+#pc 
+	  {  
+		/*text-align:center;*/
+		padding-left: 10px; 
+		padding-right: 10px;
+		bottom:4em; 
+		border:5px solid red;
+		background-image:url(Bilder/bild8.jpg);
+		
+		
+}    
+ 
+ 
+ 
+ div /* Ramen formatieren */
+	    {
+		text-align:center;
+		padding-left: 10px; 
+		padding-right: 10px;
+		/*background-color:#FFFFCC;*/
+		background-repeat:no-repeat;
+		background-image:url(Bilder/bild5.jpg);
+		bottom:4em; 
+		border:5px solid ;
+		padding:20px;
+		
+ 
+
+ 
+}		

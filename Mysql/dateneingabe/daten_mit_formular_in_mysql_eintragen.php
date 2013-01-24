@@ -15,7 +15,7 @@ $db_name = "energietraeger";
     $verbrauch_kwh = $verbrauch_kubikmeter*0.9636*11.108;
 	$verbrauch_euro = $_POST['verbrauch_euro'];
     // Verbindung oeffnen und Datenbank ausweahlen
-     $conID= mysql_connect("localhost","root","12345");
+     $conID= mysql_connect("localhost","root","");
         mysql_select_db( $db_name, $conID );
 
     
@@ -25,5 +25,5 @@ $db_name = "energietraeger";
                 
     // Schickt die Anfrage an die DB und schreibt die Daten in die Tabelle
     mysql_query( $sql );
-    echo $datum;
+    //echo $datum;
 	?>

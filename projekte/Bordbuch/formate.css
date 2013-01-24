@@ -1,0 +1,26 @@
+div#h1 {
+	float:left;
+	max-width:300px; 
+	max-height:300px;
+	border-width:3px;
+	border-style:solid;
+	border-color:blue;
+	text-align:center; 
+	}
+	
+	div#h2 {
+	float:left;
+	max-width:600px; 
+	max-height:300px;
+	border-width:3px;
+	border-style:solid;
+	border-color:blue;
+	text-align:center; 
+	}
+	
+	div#page {
+	border-width:3px;
+	border-style:solid;
+	border-color:blue;
+	text-align:center; 
+	}

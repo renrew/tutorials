@@ -10,6 +10,7 @@
 
 </style>
 </head>
+
 <body>
 <div id="kopfbereich">
 <p>ENERGIETRÄGER - VERWALTUNG<br/>
@@ -25,16 +26,24 @@ Steuerung
 
 </div>
 
-<div id="inhalt">
-<h1>Willkommen auf der Energieträgerverwaltung<br/></h1>
-Diese Anwendung gliedert sich in 3 Bereiche<br/><br/><br/>
-<h3 class="klasse"><a href="erdgas.html">Erdgas </a></h3><br/>
-Elegtroenergie<br/><br/>
-Wasser<br/><br/>
-</div>
-<div id="unten">
-Sonstiges
+<div id="formular"><br>
+<form action="daten_mit_formular_in_mysql_eintragen.php" method="post" name="formular" id="formular">
+datum: <input type="text" name="datum" id="datum" /><br /><br />
+zaehlerstand: <input type="text" name="zaehlerstand" id="zaehlerstand" /><br /><br />
+verbrauch_kubikmeter: <input type="text" name="verbrauch_kubikmeter" id="verbrauch_kubikmeter" /><br /><br />
+verbrauch_kwh: <input type="text" name="verbrauch_kwh" id="verbrauch_kwh" /><br /><br />
+<input type="submit" name="eintragen" id="eintragen" value="Abschicken" /><br><br>
+
 </div>
 
+<div id="return_gas"><br><br>
+<h3 class="klasse"><a href="erdgas.html">Zurück zu Erdgas </a></h3
+
+</div>
+
+<div id="return_gas"><br><br>
+<h3 class="klasse"><a href="energietraeger.html">Zurück zum Hauptmenü </a></h3
+
+</div>
 </body>
 </html>

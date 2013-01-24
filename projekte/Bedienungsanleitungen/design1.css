@@ -1,0 +1,65 @@
+
+h1   {
+  font-family:lucida handwriting; /* Schriftart */
+  color:#black;   /* Farbe bestimmen */
+  font-size:28pt;  /* Größe festlegenpt   */
+    font-weight:bold; /* Schriftstärke */
+  font-style:oblique; /* Schriftstil */
+  background-color:#FF00FF /* Schrifthintergrund */
+  	
+    }
+
+h1   {
+border-color:#black; /* Rahmenfarbe schwarz */
+border-width:10px 5px; /* Rahmenbreite  */
+border-style: groove; /* Rahmenstil  */
+text-align:center; /*Textausrichtung */
+
+	}	
+
+	a:link	 {  
+	font-family: Arial;
+	font-size:18pt;
+	font-weight:bolder;
+	letter-spacing:0.2em;
+	  	}
+		 
+	a:link   {
+	border-color:#black;
+	border-width:2px;
+	border-style: groove;
+
+	    }
+hr /* Horizontale Linie formatieren */
+	     {
+		color: black; 
+		background: red; 
+		height: 2px;
+		}
+
+#anleitungen 
+	  {  
+		padding-left: 10px; 
+		padding-right: 10px;
+		width:185px;
+		background-color:#CCFF33;		
+		bottom:4em; 
+		border:10px solid #000066;
+		padding:15px;
+}  
+ 
+ 
+ 
+ div /* Ramen formatieren */
+	    {
+		padding-left: 10px; 
+		padding-right: 10px;
+		background-color:rgb(255,255,0);		
+		bottom:4em; 
+		border:10px solid #FF00FF;
+		padding:20px;
+		
+ 
+
+ 
+		
