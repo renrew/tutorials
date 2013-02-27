@@ -1,0 +1,104 @@
+body {
+    font: normal 100.01% Helvetica, Arial, sans-serif;
+    color: black; background-color: #ffffe0;
+  }
+  
+  ul#Navigation {
+    margin: 0; padding: 1.2em;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #FF00FF;
+  }
+  ul#Navigation li {
+    list-style: none;
+    display: inline;
+    margin: 0.4em; padding: 0;
+  }
+
+  ul#Navigation a, ul#Navigation span {
+    padding: 0.2em 1em;
+    text-decoration: none; font-weight: bold;
+    border: 1px solid black;
+    border-left-color: white; border-top-color: white;
+    color: maroon; background-color: #ccc;
+  }
+  * html ul#Navigation a, * html ul#Navigation span {
+    width: 1em;    /* nur fuer IE 5.0x erforderlich */
+    w/idth: auto;  /* sicherheitshalber fuer IE 6 zurueckgesetzt */
+  }
+  ul#Navigation a:hover, ul#Navigation span {
+    border-color: white;
+    border-left-color: black; border-top-color: black;
+    color: white; background-color: gray;
+  }
+  
+  div 
+	{
+	text-align: center;
+	background-color: #99FFFF;
+	border: 1px solid black;
+    border-color: black;
+	} 
+	
+	#js1 
+	{
+	    text-align: center;
+	    background-color: #FFFFCC;
+		position:center;
+		max-height:50px;
+		max-width:400px;
+		overflow:hidden; 
+		border:solid 5px red; 
+		font-size:10px; 
+		padding:5px
+	} 
+#return
+		{
+		position:absolute; 
+		bottom:125px;
+		left:10px;
+		background-color: #FFFF99;
+		font-size:30px;
+		}
+		
+#oben
+		{
+		position:left;
+		max-width:650px; 
+		overflow:hidden; 
+		border:solid 5px green; 
+		font-size:20px; 
+		padding:10px
+		}
+		
+#bild1
+		
+		{
+		position:absolute; 
+		bottom:550px; 
+		left:100px;
+		}		
+
+#bild2
+		
+		{
+		position:absolute; 
+		bottom:20px; 
+		left:100px;
+		}
+
+#car1
+		
+		{
+		position:absolute; 
+		bottom:550px; 
+		right:100px;
+		}	
+
+#car2
+		
+		{
+		position:absolute; 
+		bottom:20px; 
+		right:100px;
+		}			

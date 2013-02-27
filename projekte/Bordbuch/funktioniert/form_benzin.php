@@ -66,5 +66,5 @@
 
     echo "Daten erfolgreich eingetragen !";
 	
-	//header("Location: form_benzin2.html"); 
+	header("Location: form_benzin2.html"); 
    ?>

@@ -1,0 +1,10 @@
+<html><head><title>Test</title>
+<script type="text/javascript">
+function FensterOeffnen (Adresse) {
+  MeinFenster = window.open(chrome://downloads/#, "Zweitfenster", "width=300,height=200,scrollbars=yes");
+  MeinFenster.focus();
+}
+</script>
+</head><body>
+<a href="datei2.htm" onclick="FensterOeffnen(this.href); return false">Neues Fenster</a>
+</body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="formular_t.css" type="text/css" rel="stylesheet" />
+<title>Kraftstoff</title>
+</head>
+<body>
+<div id="js1">
+<script type="text/javascript">
+var Jetzt = new Date();
+var Tag = Jetzt.getDate();
+var Monat = Jetzt.getMonth() + 1;
+var Jahr = Jetzt.getYear();
+var Stunden = Jetzt.getHours();
+var Minuten = Jetzt.getMinutes();
+var NachVoll = ((Minuten < 10) ? ":0" : ":");
+if (Jahr < 2000)
+  Jahr = Jahr + 1900;
+document.write("<h2>Guten Tag! Heute ist der " +
+               Tag + "." + Monat + "." + Jahr + ". Es ist jetzt " +
+               Stunden + NachVoll + Minuten + " Uhr<\/b>");
+</script>
+</div>
+<br>
+<div id="oben">
+<h1>Eingabe der Verbrauchsdaten</h1>
+</div>
+<br> <br> <br> <br> <br>
+<form method="post" action="form_benzin.php" >
+  <table border="0" cellpadding="0" cellspacing="6">
+    <tr>
+      <td align="right">Datum:</td>
+      <td><input name="datum" type="date" size="30" maxlength="30"></td>
+    </tr>
+    <tr>
+      <td align="right">Tachostand:</td>
+      <td><input name="tachostand" type="int" size="19" maxlength="19"></td>
+    </tr>
+	<tr>
+      <td align="right">Liter-Benzin:</td>
+      <td><input name="liter" type="int" size="19" maxlength="19"></td>
+    </tr>
+	<tr>
+      <td align="right">Euro/Liter:</td>
+      <td><input name="preis" type="int" size="19" maxlength="19"></td>
+    </tr>
+  </table>
+   <br> <br> <br> <br>
+  <p><input type="submit" value="Daten absenden"></p>
+</form>
+<br> <br> <br> <br> <br> <br>
+<div id="return">
+<a href="Bordbuch.html">zurück</a>
+</div>
+<div id="car2" ">
+	<img src="zapf2.jpg" 	
+	width="208" 
+	height="181" 
+	alt="image">
+  </div>
+  
+  <div id="car1" ">
+	<img src="car2.jpg" 	
+	width="208" 
+	height="181" 
+	alt="image">
+  </div>
+</body>
+</html>
